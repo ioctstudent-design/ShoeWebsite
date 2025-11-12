@@ -1,0 +1,294 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Nike Shoes Landing Page</title>
+  <style>
+    * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+        font-family: "Poppins", sans-serif;
+      }
+      
+      body {
+        background: #fff;
+        color: #222;
+        overflow-x: hidden;
+      }
+      
+      /* Header */
+      header {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 25px 8%;
+        background: #fff;
+      }
+      
+      .logo {
+        font-size: 28px;
+        font-weight: 700;
+        color: #ff5a3d;
+      }
+      
+      nav ul {
+        display: flex;
+        list-style: none;
+        gap: 25px;
+      }
+      
+      nav a {
+        text-decoration: none;
+        color: #333;
+        font-weight: 500;
+      }
+      
+      .signin a {
+        color: #555;
+        text-decoration: none;
+        font-size: 14px;
+      }
+      
+      /* Hero Section */
+      .hero {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        padding: 60px 8%;
+        flex-wrap: wrap;
+        background: linear-gradient(to right, #fff, #f9f9ff);
+      }
+      
+      .hero-text {
+        flex: 1;
+        min-width: 300px;
+      }
+      
+      .hero-text .subheading {
+        color: #ff5a3d;
+        font-size: 14px;
+        margin-bottom: 10px;
+      }
+      
+      .hero-text h1 {
+        font-size: 48px;
+        line-height: 1.2;
+      }
+      
+      .hero-text span {
+        color: #ff5a3d;
+      }
+      
+      .hero-text .description {
+        color: #555;
+        margin: 20px 0;
+        max-width: 450px;
+      }
+      
+      .btn {
+        background: #ff5a3d;
+        color: #fff;
+        padding: 12px 25px;
+        border-radius: 25px;
+        text-decoration: none;
+        font-weight: 600;
+        display: inline-block;
+      }
+      
+      .stats {
+        display: flex;
+        gap: 30px;
+        margin-top: 30px;
+      }
+      
+      .stats div {
+        font-size: 16px;
+        color: #444;
+      }
+      
+      .hero-image {
+        flex: 1;
+        text-align: center;
+      }
+      
+      .hero-image img {
+        width: 90%;
+        max-width: 400px;
+      }
+      
+      .shoe-options {
+        display: flex;
+        justify-content: center;
+        gap: 15px;
+        margin-top: 15px;
+      }
+      
+      .shoe-options img {
+        width: 60px;
+        height: 60px;
+        border-radius: 10px;
+        border: 2px solid transparent;
+        cursor: pointer;
+        transition: 0.3s;
+      }
+      
+      .shoe-options img:hover {
+        border-color: #ff5a3d;
+      }
+      
+      /* Product Section */
+      .products {
+        padding: 60px 8%;
+        text-align: center;
+      }
+      
+      .products h2 {
+        font-size: 32px;
+      }
+      
+      .products h2 span {
+        color: #ff5a3d;
+      }
+      
+      .products p {
+        color: #555;
+        margin-bottom: 40px;
+      }
+      
+      .product-grid {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+        gap: 20px;
+      }
+      
+      .product-card {
+        background: #C1C4DE;
+        border-radius: 20px;
+        padding: 20px;
+        display: flex;
+        box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+        transition: transform 0.3s;
+      }
+      
+      .product-card:hover {
+        transform: translateY(-10px);
+      }
+      
+      .product-card img {
+        width: 100%;
+        height: 180px;
+        object-fit: contain;
+    
+      }
+      
+      .product-card h3 {
+        margin: 15px 0 5px;
+        font-size: 25px;
+        
+      }
+      
+      .product-card p {
+        color: #ff5a3d;
+        font-weight: 600;
+      }
+      
+      /* Footer */
+      footer {
+        background: #111;
+        color: #ccc;
+        padding: 30px 8%;
+        text-align: center;
+      }
+      
+      .footer-content {
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+        align-items: center;
+      }
+      
+      .footer-content .socials a {
+        color: #ff5a3d;
+        margin: 0 8px;
+        text-decoration: none;
+      }
+      
+      @media (max-width: 768px) {
+        .hero {
+          flex-direction: column-reverse;
+          text-align: center;
+        }
+      
+        .hero-text h1 {
+          font-size: 36px;
+        }
+      
+        .stats {
+          justify-content: center;
+        }
+      }
+      
+  </style>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <!-- Header Section -->
+  <header>
+    
+    <div class="logo">Nike
+    <img src="tickmark.png" alt="" srcset=""></div>
+    <nav>
+      <ul>
+        <li><a href="#">Home</a></li>
+        <li><a href="#">About Us</a></li>
+        <li><a href="#">Services</a></li>
+        <li><a href="#">Contact Us</a></li>
+      </ul>
+    </nav>
+    <div class="signin">
+      <a href="#">Sign in / Explore now</a>
+    </div>
+  </header>
+
+  <!-- Hero Section -->
+  <section class="hero">
+    <div class="hero-text">
+      <p class="subheading">Our Summer Collections</p>
+      <h1>The New Arrival <span>Nike</span> Shoes</h1>
+      <p class="description">
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam id odio id pharetra viverra.
+      </p>
+      <a href="#" class="btn">Shop now</a>
+
+      <div class="stats">
+        <div><strong>1k+</strong><br>Brands</div>
+        <div><strong>500+</strong><br>Shops</div>
+        <div><strong>250k+</strong><br>Customers</div>
+      </div>
+    </div>
+
+    <div class="hero-image">
+      <img src="shoebigpic.png" alt="Nike Shoe">
+      <div class="shoe-options">
+        <img src="shoesmall1.png" alt="">
+        <img src="shoe3.png" alt="">
+        <img src="shoesmall3.png" alt="">
+      </div>
+    </div>
+  </section>
+
+  <!-- Products Section -->
+  <section class="products">
+    <h2>Our <span>Popular</span> Products</h2>
+    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam id odio id pharetra viverra.</p>
+    <h3>Nike Air Zoom</h3>
+    <div class="product-grid">
+      <div class="product-card">
+        <img src="big1.png" alt="" style="background: #C1C4DE;">
+        <img src="big2.png" alt="">
+        <img src="big3.png" alt="">
+        <img src="big4.png" alt="">
+        
+     
